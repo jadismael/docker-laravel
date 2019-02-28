@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_controller" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_controller/trinity_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_customer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_customer/trinity_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_frontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_loan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_loan/trinity_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_merchant" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_merchant/trinity_common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_merchant/trinity_merchant" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_user" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/www/service/trinity_user/trinity_common" vcs="Git" />
+  </component>
+</project>
