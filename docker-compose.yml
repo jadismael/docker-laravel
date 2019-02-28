@@ -3,7 +3,7 @@ services:
 
   web:
     image: nginx
-    container_name: trinity-nginx
+    container_name: laravel-nginx
     ports:
 # ---- laravel
       - "8085:8085"
@@ -21,13 +21,13 @@ services:
   php:
     build: .
     working_dir: /var/www
-    container_name: trinity-php
+    container_name: laravel-php
     volumes_from:
       - code
 
   mysql:
     image: mysql:5.7.21
-    container_name: trinity-mysql
+    container_name: laravel-mysql
     ports:
 #      - "33061:3306"
       - "3306:3306"
@@ -40,7 +40,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
   redis:
     image: redis
-    container_name: trinity-redis
+    container_name: laravel-redis
     command: redis-server /usr/local/etc/redis/redis.conf
     volumes:
       - ./conf/redis.conf:/usr/local/etc/redis/redis.conf
@@ -48,7 +48,7 @@ services:
       - "6379:6379"
  
   code:
-    container_name: trinity-code
+    container_name: laravel-code
     image: busybox
     volumes:
       - ./www:/var/www
