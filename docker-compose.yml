@@ -5,8 +5,8 @@ services:
     image: nginx
     container_name: laravel-nginx
     ports:
-# ---- laravel
-      - "8085:8085"
+      # ---- ms_customer
+      - "8082:8082"
     links:
       - php
       - mysql

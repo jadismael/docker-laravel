@@ -7,7 +7,7 @@ RUN chmod o+r /etc/resolv.conf
 
 # Install required packages
 RUN apt-get update && \
-    apt-get install -y wget git zip sendmail libpng-dev libjpeg62-turbo-dev mysql-client
+    apt-get install -y wget git zip sendmail libpng-dev libjpeg62-turbo-dev mariadb-client
 
 # Install phpunit
 RUN wget https://phar.phpunit.de/phpunit.phar && \
@@ -23,7 +23,7 @@ RUN docker-php-ext-configure gd \
     docker-php-ext-install gd
 
 # Install PHP pdo_mysql extention
-RUN docker-php-ext-install pdo_mysql bcmath sockets
+RUN docker-php-ext-install pdo_mysql bcmath sockets zip
 
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
